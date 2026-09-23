@@ -29,16 +29,63 @@ $$
 - non-biased Monte-Carlo estimate
 - complexity of each epoch is $O(ND)$, but weights are updated $N/B$ as often
 
-5. Optimal tep size
+5. Optimal step size
 $$
 \alpha_k = \min_\alpha L(w_k - \alpha_k \nabla_w L(w_k,X,Y), X, y)
 $$
 
 6. Second order
-* Quasi-Newton
-* LBFGS
+- Second Order
+    * Newton method
+    * $f(x + \Delta x) \sim f(x) + \langle \nabla f(x), \Delta x \rangle + \frac{1}{2} \langle H(x) \Delta x, \Delta x \rangle$
+    * $\Delta x = H^{-1}(x) \nabla f(x)$
+    * $x_{k+1} = x_k - \alpha H_k^{-1} \nabla f(x_k)$
+
+- Quasi-Newthon methods
+    * Secant method
+    * BFGS and L-BFGS
 
 7. Gradient Descent Modifications
+- GD
+    * direction of fastest local increase of a function.
+        * Taylor expansion for $\|h\|=1$: $f(x+\alpha h) = f(x) + \alpha \langle \nabla f(x), h \rangle + o(\alpha)$
+        * We want to find minimal value: $f(x) + \alpha \langle \nabla f(x), h \rangle < f(x)$
+        * Cauchy–Schwarz inequality: $\langle \nabla f(x), h \rangle \geq \| \nabla f(x) \|_2 \| h \|_2 = \| \nabla f(x) \|_2$
+        * where $\langle \nabla f(x), h \rangle$ takes minimal value when $h \sim - \nabla f(x) = - \frac{\nabla f(x)}{\| \nabla f(x) \|_2}$
+    * hence $x_{k+1} = x_k - \alpha \nabla f(x_k)$
+    * fastest descent: $\alpha_k = \arg \min_\alpha f \big( x_k - \alpha \nabla f(x_k) \big)$
+
+- SGD
+    * $f(x) = \sum_i L(x, y_i)$
+    * $f(x) = \mathbb{E} \big[ L(x, \xi) \big], \xi \sim y$
+    * $\nabla f(x) = \mathbb{E} \big[ \nabla L(x, y) \big]$
+    * unbiased Monte-Carlo estimate: $\tilde{\nabla} f(x) = \frac{1}{B} \sum_{i=1}^{B} \nabla L(x, \xi_i)$
+
+- Momentum
+    * $v_{k+1} = \beta_k v_k - \alpha_k \nabla f(x_k)$
+    * $x_{k+1} = x_k + v_{k+1}$
+
+- Nesterov Momentum
+    * $v_{k+1} = \beta_k v_k - \alpha_k \nabla f(x_k + \beta_k v_k)$
+    * $x_{k+1} = x_k + v_{k+1}$
+
+- AdaGrad
+    * $G_{k+1} = G_k + \big( \nabla f (x_k) \big)^2$
+    * $x_{k+1} = x_k - \frac{\alpha}{\sqrt{G_{k+1} + \varepsilon}} \nabla f(x_k)$
+
+- RMSPROP
+    * $G_{k+1} = \gamma  G_k + (1 - \gamma) \big( \nabla f (x_k) \big)^2$
+    * $x_{k+1} = x_k - \frac{\alpha}{\sqrt{G_{k+1} + \varepsilon}} \nabla f(x_k)$
+
+- Adam
+    * $v_{k+1} = \beta_1 v_k + (1-\beta_1) \nabla f(x_k)$
+    * $G_{k+1} = \beta_2  G_k + (1 - \beta_2) \big( \nabla f (x_k) \big)^2$
+    * $x_{k+1} = x_k - \frac{\alpha}{\sqrt{G_{k+1} + \varepsilon}} v_{k+1}$
+
+- AdamW
+    * $v_{k+1} = \beta_1 v_k + (1-\beta_1) \nabla f(x_k)$
+    * $G_{k+1} = \beta_2  G_k + (1 - \beta_2) \big( \nabla f (x_k) \big)^2$
+    * $x_{k+1} = x_k - (\frac{\alpha}{\sqrt{G_{k+1} + \varepsilon}} v_{k+1} + \lambda x_k)$
 
 8. Why regularization is needed  
 - Consider X is degenerate (features have linear dependency), then $\exist \nu: X\nu = 0$
@@ -58,11 +105,11 @@ $$
     * feature selections due to weight sparsity
 
 
-11. Feature normalization
+10. Feature normalization
 - does not change predictions
 - makes weights interpretable
 
-12. Loss functions
+11. Loss functions
 - MAE
     * $\frac{1}{N} \sum |y_i-\langle w, x_i \rangle|$
     * approximates median of $p(y|x)$
@@ -74,7 +121,7 @@ $$
     * $h_d(x)=x^2/2, |x| \leq 2$
     * $h_d(x)= d(|x|-d/2), |x|>d$
 
-13. Metrics
+12. Metrics
 - MSE
     * $MSE = \frac{1}{N} \sum (y_i - \langle w, x_i \rangle)^2$
 - RMSE
