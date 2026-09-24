@@ -154,6 +154,9 @@ ML = \prod p(y_i|x_i, w) = \prod \mathcal{N}(\langle w, x_i \rangle, \sigma^2) \
 \log{ML} = \frac{1}{N} \sum (y_i - \langle w, x_i \rangle)^2 + C \\
 
 \arg \max \log{ML} = \arg \max \frac{1}{N} \sum (y_i - \langle w, x_i \rangle)^2
+% - all benefits of MLE
+%     * $\tilde{w} \xrightarrow{\mathbb{P}} w$
+%     * 
 $$
 - Ordinary Least Squares estimator is the Maximal Likelihood Estimator
 - if $\epsilon \sim \text{Laplace}$, then MLE is the estimator minimizing MAE
