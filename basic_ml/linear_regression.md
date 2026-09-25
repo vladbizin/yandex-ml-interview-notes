@@ -145,7 +145,7 @@ $$
     * similair to log-scaling your targets first for training
 14. MLE estimate
 $$
-y = \langle w, x \rangle + \epsilon, \epsilon \sim \mathcal{N}(0, \sigma^2) \\
+y = \langle w, x \rangle + \varepsilon, \varepsilon \sim \mathcal{N}(0, \sigma^2) \\
 
 y \sim \mathcal{N}(\langle w, x \rangle, \sigma^2) \\
 
@@ -159,7 +159,7 @@ ML = \prod p(y_i|x_i, w) = \prod \mathcal{N}(\langle w, x_i \rangle, \sigma^2) \
 %     * 
 $$
 - Ordinary Least Squares estimator is the Maximal Likelihood Estimator
-- if $\epsilon \sim \text{Laplace}$, then MLE is the estimator minimizing MAE
+- if $\varepsilon \sim \text{Laplace}$, then MLE is the estimator minimizing MAE
 - OLS estimator is the Best Linear Unbiased Estimator (Gauss-Markov Theorem)
     * Best: has the smallest variance in class (among all linear unbiased estimators)
     * Unbiased: $\mathbb{E}[\tilde{w}]=w$
