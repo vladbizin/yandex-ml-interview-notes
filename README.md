@@ -1,0 +1,43 @@
+# Yandex ML Interview Preparation Notes
+
+These are the notes I used to prepare for interviews for a **Computer Vision / Deep Learning Engineer** role at Yandex. I received **grade 17 (Senior)** after the technical interviews. I am publishing the notes both as a record of that preparation and as a reference I can return to before future interviews.
+
+This is a personal interview prep guide, not a complete ML textbook. Most of the notes are prompts for explaining a topic aloud: what to cover, which details are easy to forget, and how to keep the explanation coherent.
+
+## Interview rounds and notes
+
+| Round | What to expect | Notes in this repository |
+| --- | --- | --- |
+| **1. Machine Learning & Programming (MLP)** | A small programming task, plus a discussion of a familiar ML algorithm and the full model development process: data, training, tuning, and evaluation. | [Classical ML notes](#round-1-classical-ml) |
+| **2. Algorithms & Data Structures** | Two problems around LeetCode medium difficulty. | Not covered here. |
+| **3. Machine Learning Special** | A deeper discussion of the candidate's specialty; for me, computer vision and deep learning. | [Neural networks](nn.md) and [computer vision](cv.md) |
+| **4. Final interview** | A discussion with a specific team, potentially focused on its domain. I was particularly interested in the YandexGPT alignment team, so I reviewed RL and RLHF. | [Reinforcement learning](rl.md) and [RLHF](rlhf.md) |
+
+### Round 1: Classical ML
+
+I had interviewed at Yandex before, so I expected the ML discussion to use a favorite algorithm as a starting point for questions about the entire training pipeline. I wrote the [`basic_ml/`](basic_ml/) notes myself as short speaking outlines rather than detailed tutorials:
+
+- [Linear regression](basic_ml/linear_regression.md)
+- [Logistic regression](basic_ml/logistic_regression.md)
+- [Decision trees](basic_ml/decision_trees.md)
+- [Random forests](basic_ml/random_forest.md)
+- [Gradient boosting](basic_ml/gradient_boosting.md)
+- [Evaluation metrics](basic_ml/metrics.md)
+
+Neural networks have their own section because they were less likely to come up in my first round. A/B testing is another possible topic, but it is not covered in these notes. The programming part of MLP is also outside the scope of this repository.
+
+### Round 3: Neural networks and computer vision
+
+- [**Neural networks**](nn.md) covers optimizers, regularization, and training issues such as vanishing or exploding gradients. I wrote it as a structured reminder of details I wanted to recall during an interview.
+- [**Computer vision**](cv.md) surveys CV tasks, the development of model architectures from early CNNs to vision transformers, and serving and optimization topics. It includes illustrative code and references within the notes.
+
+### Round 4: RL and alignment
+
+- [**Reinforcement learning**](rl.md) starts with MDPs and Bellman equations, then builds through Monte Carlo and temporal difference methods, policy gradients, actor–critic methods, and modern policy optimization.
+- [**RLHF**](rlhf.md) follows the alignment pipeline from supervised fine-tuning and preference data to reward models, PPO, and DPO.
+
+I prepared the RL and RLHF notes with AI assistance and reviewed and organized them for my own study. Their progression from simpler ideas to more advanced algorithms was inspired by S. N. Nikolenko's lectures.
+
+## How to use these notes
+
+Pick a topic and try to explain it out loud before opening its file. Use the notes to check the structure of your answer and catch missing points. For the later rounds, read [neural networks](nn.md) before [computer vision](cv.md), and [reinforcement learning](rl.md) before [RLHF](rlhf.md); each pair builds on the earlier material.
