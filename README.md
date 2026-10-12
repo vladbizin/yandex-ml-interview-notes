@@ -4,8 +4,6 @@ These are the notes I used to prepare for interviews for a **Computer Vision / D
 
 This is a personal interview prep guide, not a complete ML textbook. Most of the notes are prompts for explaining a topic aloud: what to cover, which details are easy to forget, and how to keep the explanation coherent.
 
-I later added a separate set of notes on LLM inference optimization for AI engineer interviews. They are listed after the original interview rounds.
-
 ## Interview rounds and notes
 
 | Round | What to expect | Notes in this repository |
@@ -13,7 +11,7 @@ I later added a separate set of notes on LLM inference optimization for AI engin
 | **1. Machine Learning & Programming (MLP)** | A small programming task, plus a discussion of a familiar ML algorithm and the full model development process: data, training, tuning, and evaluation. | [Classical ML notes](#round-1-classical-ml) |
 | **2. Algorithms & Data Structures** | Two problems around LeetCode medium difficulty. | Not covered here. |
 | **3. Machine Learning Special** | A deeper discussion of the candidate's specialty; for me, computer vision and deep learning. | [Neural networks](nn.md) and [computer vision](cv.md) |
-| **4. Final interview** | A discussion with a specific team, potentially focused on its domain. I was particularly interested in the YandexGPT alignment team, so I reviewed RL and RLHF. | [Reinforcement learning](rl.md) and [RLHF](rlhf.md) |
+| **4. Final interview** | A discussion with a specific team, potentially focused on its domain. I did not know which topics to expect, so I prepared broadly. | [RL and alignment](#rl-and-alignment) and [LLM inference optimization](#llm-inference-optimization) |
 
 ### Round 1: Classical ML
 
@@ -33,14 +31,18 @@ Neural networks have their own section because they were less likely to come up 
 - [**Neural networks**](nn.md) covers optimizers, regularization, and training issues such as vanishing or exploding gradients. I wrote it as a structured reminder of details I wanted to recall during an interview.
 - [**Computer vision**](cv.md) surveys CV tasks, the development of model architectures from early CNNs to vision transformers, and serving and optimization topics. It includes illustrative code and references within the notes.
 
-### Round 4: RL and alignment
+### Round 4: Broad preparation
+
+I did not know what the final team's interview would cover, so I prepared across several areas. I was particularly interested in the YandexGPT alignment team, but also studied LLM inference optimization.
+
+#### RL and alignment
 
 - [**Reinforcement learning**](rl.md) starts with MDPs and Bellman equations, then builds through Monte Carlo and temporal difference methods, policy gradients, actor–critic methods, and modern policy optimization.
 - [**RLHF**](rlhf.md) follows the alignment pipeline from supervised fine-tuning and preference data to reward models, PPO, and DPO.
 
 I prepared the RL and RLHF notes with AI assistance and reviewed and organized them for my own study. Their progression from simpler ideas to more advanced algorithms was inspired by S. N. Nikolenko's lectures.
 
-## LLM inference optimization
+#### LLM inference optimization
 
 These notes focus on how a transformer generates tokens and how inference systems reduce latency or serve more requests:
 
