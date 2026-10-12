@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="645" viewBox="0 0 1120 645" role="img" aria-label="Technique - chunked prefill">
+<rect width="1120" height="645" fill="#FFFFFF"/>
+<text x="40" y="41.5" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="26" font-weight="700">Chunked prefill: one prompt across two steps</text>
+<text x="40" y="81.5" text-anchor="start" dominant-baseline="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="16" font-weight="400">Input budget = 3 tokens. Prompt C has 5 tokens: C0–C4.</text>
+<rect x="40" y="117" width="500" height="405" rx="7" fill="#FAFCFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="58" y="147.0" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="20" font-weight="700">Step 1 · first chunk</text>
+<text x="58" y="183.0" text-anchor="start" dominant-baseline="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="14" font-weight="400">3 of 3 input slots used</text>
+<text x="58" y="223.0" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">New queries (Q)</text>
+<rect x="58" y="243" width="106" height="44" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="111.0" y="257.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="12" font-weight="700">C0</text>
+<text x="111.0" y="272.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="12" font-weight="700">prefill</text>
+<rect x="172" y="243" width="106" height="44" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="225.0" y="257.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="12" font-weight="700">C1</text>
+<text x="225.0" y="272.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="12" font-weight="700">prefill</text>
+<rect x="286" y="243" width="106" height="44" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="339.0" y="257.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="12" font-weight="700">C2</text>
+<text x="339.0" y="272.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="12" font-weight="700">prefill</text>
+<text x="58" y="307.0" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">Attention mask: rows Q → columns K/V</text>
+<rect x="387" y="332" width="43" height="43" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="408.5" y="347.25" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="700">C0</text>
+<text x="408.5" y="359.75" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="700">new</text>
+<rect x="432" y="332" width="43" height="43" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="453.5" y="347.25" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="700">C1</text>
+<text x="453.5" y="359.75" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="700">new</text>
+<rect x="477" y="332" width="43" height="43" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="498.5" y="347.25" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="700">C2</text>
+<text x="498.5" y="359.75" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="700">new</text>
+<rect x="283" y="385" width="94" height="32" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="330.0" y="401.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="13" font-weight="700">C0</text>
+<rect x="387" y="385" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="408.5" y="401.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="432" y="385" width="43" height="32" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="477" y="385" width="43" height="32" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="283" y="421" width="94" height="32" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="330.0" y="437.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="13" font-weight="700">C1</text>
+<rect x="387" y="421" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="408.5" y="437.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="432" y="421" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="453.5" y="437.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="477" y="421" width="43" height="32" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="283" y="457" width="94" height="32" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="330.0" y="473.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="13" font-weight="700">C2</text>
+<rect x="387" y="457" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="408.5" y="473.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="432" y="457" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="453.5" y="473.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="477" y="457" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="498.5" y="473.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<text x="58" y="500.0" text-anchor="start" dominant-baseline="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="13" font-weight="400">After step 1: cache C0–C2. No output yet.</text>
+<rect x="580" y="117" width="500" height="405" rx="7" fill="#FAFCFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="598" y="147.0" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="20" font-weight="700">Step 2 · final chunk</text>
+<text x="598" y="183.0" text-anchor="start" dominant-baseline="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="14" font-weight="400">2 of 3 input slots used</text>
+<text x="598" y="223.0" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">New queries (Q)</text>
+<rect x="598" y="243" width="106" height="44" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="651.0" y="257.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="12" font-weight="700">C3</text>
+<text x="651.0" y="272.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="12" font-weight="700">prefill</text>
+<rect x="712" y="243" width="106" height="44" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="765.0" y="257.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="12" font-weight="700">C4</text>
+<text x="765.0" y="272.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="12" font-weight="700">prefill</text>
+<text x="598" y="307.0" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">Attention mask: rows Q → columns K/V</text>
+<rect x="837" y="332" width="43" height="43" rx="3" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="858.5" y="347.25" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="400">C0</text>
+<text x="858.5" y="359.75" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="400">old</text>
+<rect x="882" y="332" width="43" height="43" rx="3" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="903.5" y="347.25" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="400">C1</text>
+<text x="903.5" y="359.75" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="400">old</text>
+<rect x="927" y="332" width="43" height="43" rx="3" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="948.5" y="347.25" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="400">C2</text>
+<text x="948.5" y="359.75" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="400">old</text>
+<rect x="972" y="332" width="43" height="43" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="993.5" y="347.25" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="700">C3</text>
+<text x="993.5" y="359.75" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="700">new</text>
+<rect x="1017" y="332" width="43" height="43" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="1038.5" y="347.25" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="700">C4</text>
+<text x="1038.5" y="359.75" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="10" font-weight="700">new</text>
+<rect x="733" y="385" width="94" height="32" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="780.0" y="401.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="13" font-weight="700">C3</text>
+<rect x="837" y="385" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="858.5" y="401.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="882" y="385" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="903.5" y="401.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="927" y="385" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="948.5" y="401.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="972" y="385" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="993.5" y="401.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="1017" y="385" width="43" height="32" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="733" y="421" width="94" height="32" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="780.0" y="437.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="13" font-weight="700">C4</text>
+<rect x="837" y="421" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="858.5" y="437.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="882" y="421" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="903.5" y="437.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="927" y="421" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="948.5" y="437.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="972" y="421" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="993.5" y="437.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<rect x="1017" y="421" width="43" height="32" rx="2" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+<text x="1038.5" y="437.0" text-anchor="middle" dominant-baseline="middle" fill="#7C3AED" font-family="Arial, sans-serif" font-size="14" font-weight="700">●</text>
+<text x="598" y="500.0" text-anchor="start" dominant-baseline="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="13" font-weight="400">After step 2: C4 predicts the first output.</text>
+<rect x="40" y="553" width="1040" height="57" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="560.0" y="581.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="17" font-weight="700">C3 and C4 read the cached prefix. They cannot read future tokens.</text>
+</svg>

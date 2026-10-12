@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="695" viewBox="0 0 1120 695" role="img" aria-label="Technique - ragged batching">
+<rect width="1120" height="695" fill="#FFFFFF"/>
+<text x="40" y="41.5" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="26" font-weight="700">Ragged batching: pack unequal prompts</text>
+<text x="40" y="80.5" text-anchor="start" dominant-baseline="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="16" font-weight="400">Input budget = 4 tokens. A has 3 prompt tokens; B has 1.</text>
+<rect x="40" y="114" width="500" height="175" rx="7" fill="#FAFCFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<rect x="580" y="114" width="500" height="175" rx="7" fill="#FAFCFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="58" y="140.5" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="18" font-weight="700">Rectangular batch: 6 query slots</text>
+<text x="598" y="140.5" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="18" font-weight="700">Ragged batch: 4 real tokens</text>
+<rect x="58" y="172" width="92" height="43" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="104.0" y="193.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="15" font-weight="700">A0</text>
+<rect x="162" y="172" width="92" height="43" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="208.0" y="193.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="15" font-weight="700">A1</text>
+<rect x="266" y="172" width="92" height="43" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="312.0" y="193.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="15" font-weight="700">A2</text>
+<rect x="58" y="228" width="92" height="43" rx="7" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.5"/>
+<text x="104.0" y="249.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="15" font-weight="700">B0</text>
+<rect x="162" y="228" width="92" height="43" rx="7" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="208.0" y="249.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="15" font-weight="400">pad</text>
+<rect x="266" y="228" width="92" height="43" rx="7" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="312.0" y="249.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="15" font-weight="400">pad</text>
+<rect x="598" y="202" width="97" height="50" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="646.5" y="227.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="17" font-weight="700">A0</text>
+<rect x="706" y="202" width="97" height="50" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="754.5" y="227.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="17" font-weight="700">A1</text>
+<rect x="814" y="202" width="97" height="50" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="862.5" y="227.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="17" font-weight="700">A2</text>
+<rect x="922" y="202" width="97" height="50" rx="7" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.5"/>
+<text x="970.5" y="227.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="17" font-weight="700">B0</text>
+<text x="40" y="328.0" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="19" font-weight="700">Packed attention mask: A and B stay separate</text>
+<rect x="375" y="354" width="75" height="37" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="412.5" y="372.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">A0</text>
+<rect x="454" y="354" width="75" height="37" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="491.5" y="372.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">A1</text>
+<rect x="533" y="354" width="75" height="37" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="570.5" y="372.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">A2</text>
+<rect x="612" y="354" width="75" height="37" rx="7" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.5"/>
+<text x="649.5" y="372.5" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">B0</text>
+<rect x="257" y="396" width="105" height="40" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="309.5" y="416.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">A0</text>
+<rect x="375" y="396" width="75" height="40" rx="3" fill="#DBEAFE" stroke="#2563EB" stroke-width="1"/>
+<text x="412.5" y="416.0" text-anchor="middle" dominant-baseline="middle" fill="#2563EB" font-family="Arial, sans-serif" font-size="18" font-weight="700">●</text>
+<rect x="454" y="396" width="75" height="40" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="533" y="396" width="75" height="40" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="612" y="396" width="75" height="40" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="257" y="444" width="105" height="40" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="309.5" y="464.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">A1</text>
+<rect x="375" y="444" width="75" height="40" rx="3" fill="#DBEAFE" stroke="#2563EB" stroke-width="1"/>
+<text x="412.5" y="464.0" text-anchor="middle" dominant-baseline="middle" fill="#2563EB" font-family="Arial, sans-serif" font-size="18" font-weight="700">●</text>
+<rect x="454" y="444" width="75" height="40" rx="3" fill="#DBEAFE" stroke="#2563EB" stroke-width="1"/>
+<text x="491.5" y="464.0" text-anchor="middle" dominant-baseline="middle" fill="#2563EB" font-family="Arial, sans-serif" font-size="18" font-weight="700">●</text>
+<rect x="533" y="444" width="75" height="40" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="612" y="444" width="75" height="40" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="257" y="492" width="105" height="40" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="309.5" y="512.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">A2</text>
+<rect x="375" y="492" width="75" height="40" rx="3" fill="#DBEAFE" stroke="#2563EB" stroke-width="1"/>
+<text x="412.5" y="512.0" text-anchor="middle" dominant-baseline="middle" fill="#2563EB" font-family="Arial, sans-serif" font-size="18" font-weight="700">●</text>
+<rect x="454" y="492" width="75" height="40" rx="3" fill="#DBEAFE" stroke="#2563EB" stroke-width="1"/>
+<text x="491.5" y="512.0" text-anchor="middle" dominant-baseline="middle" fill="#2563EB" font-family="Arial, sans-serif" font-size="18" font-weight="700">●</text>
+<rect x="533" y="492" width="75" height="40" rx="3" fill="#DBEAFE" stroke="#2563EB" stroke-width="1"/>
+<text x="570.5" y="512.0" text-anchor="middle" dominant-baseline="middle" fill="#2563EB" font-family="Arial, sans-serif" font-size="18" font-weight="700">●</text>
+<rect x="612" y="492" width="75" height="40" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="257" y="540" width="105" height="40" rx="7" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.5"/>
+<text x="309.5" y="560.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="14" font-weight="700">B0</text>
+<rect x="375" y="540" width="75" height="40" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="454" y="540" width="75" height="40" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="533" y="540" width="75" height="40" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+<rect x="612" y="540" width="75" height="40" rx="3" fill="#FFEDD5" stroke="#EA580C" stroke-width="1"/>
+<text x="649.5" y="560.0" text-anchor="middle" dominant-baseline="middle" fill="#EA580C" font-family="Arial, sans-serif" font-size="18" font-weight="700">●</text>
+<rect x="40" y="618" width="1040" height="48" rx="7" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="560.0" y="642.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="400">B0 cannot read any A key. The causal mask also blocks future keys within A.</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="530" viewBox="0 0 1120 530" role="img" aria-label="Four-token budget overview">
+<rect width="1120" height="530" fill="#FFFFFF"/>
+<text x="40" y="42.0" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="27" font-weight="700">One fixed budget, four changing batches</text>
+<text x="40" y="81.0" text-anchor="start" dominant-baseline="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="16" font-weight="400">The budget counts new query tokens. Cached keys do not use these four input slots.</text>
+<text x="240" y="125.0" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="17" font-weight="700">Four input-token slots in each model step</text>
+<rect x="40" y="155" width="155" height="58" rx="7" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="117.5" y="184.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="19" font-weight="700">Step 1</text>
+<rect x="240" y="155" width="185" height="58" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="332.5" y="174.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">A0</text>
+<text x="332.5" y="194.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<rect x="445" y="155" width="185" height="58" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="537.5" y="174.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">A1</text>
+<text x="537.5" y="194.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<rect x="650" y="155" width="185" height="58" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="742.5" y="174.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">A2</text>
+<text x="742.5" y="194.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<rect x="855" y="155" width="185" height="58" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="947.5" y="174.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">A3</text>
+<text x="947.5" y="194.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<text x="40" y="225.0" text-anchor="start" dominant-baseline="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="14" font-weight="400">A arrives.</text>
+<rect x="40" y="237" width="155" height="58" rx="7" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="117.5" y="266.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="19" font-weight="700">Step 2</text>
+<rect x="240" y="237" width="185" height="58" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="332.5" y="256.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">A4</text>
+<text x="332.5" y="276.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">decode</text>
+<rect x="445" y="237" width="185" height="58" rx="7" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.5"/>
+<text x="537.5" y="256.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">B0</text>
+<text x="537.5" y="276.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<rect x="650" y="237" width="185" height="58" rx="7" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.5"/>
+<text x="742.5" y="256.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">B1</text>
+<text x="742.5" y="276.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<rect x="855" y="237" width="185" height="58" rx="7" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.5"/>
+<text x="947.5" y="256.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">B2</text>
+<text x="947.5" y="276.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<text x="40" y="307.0" text-anchor="start" dominant-baseline="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="14" font-weight="400">B arrives.</text>
+<rect x="40" y="319" width="155" height="58" rx="7" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="117.5" y="348.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="19" font-weight="700">Step 3</text>
+<rect x="240" y="319" width="185" height="58" rx="7" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="332.5" y="338.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">A5</text>
+<text x="332.5" y="358.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">decode</text>
+<rect x="445" y="319" width="185" height="58" rx="7" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.5"/>
+<text x="537.5" y="338.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">B3</text>
+<text x="537.5" y="358.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">decode</text>
+<rect x="650" y="319" width="185" height="58" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="742.5" y="338.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">C0</text>
+<text x="742.5" y="358.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<rect x="855" y="319" width="185" height="58" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="947.5" y="338.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">C1</text>
+<text x="947.5" y="358.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<text x="40" y="389.0" text-anchor="start" dominant-baseline="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="14" font-weight="400">C arrives; its prompt needs two chunks.</text>
+<rect x="40" y="401" width="155" height="58" rx="7" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="117.5" y="430.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="19" font-weight="700">Step 4</text>
+<rect x="240" y="401" width="185" height="58" rx="7" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.5"/>
+<text x="332.5" y="420.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">B4</text>
+<text x="332.5" y="440.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">decode</text>
+<rect x="445" y="401" width="185" height="58" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="537.5" y="420.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">C2</text>
+<text x="537.5" y="440.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<rect x="650" y="401" width="185" height="58" rx="7" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="742.5" y="420.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">C3</text>
+<text x="742.5" y="440.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<rect x="855" y="401" width="185" height="58" rx="7" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+<text x="947.5" y="420.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">D0</text>
+<text x="947.5" y="440.0" text-anchor="middle" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">prefill</text>
+<text x="40" y="471.0" text-anchor="start" dominant-baseline="middle" fill="#64748B" font-family="Arial, sans-serif" font-size="14" font-weight="400">A is finished; D arrives.</text>
+<text x="40" y="505.0" text-anchor="start" dominant-baseline="middle" fill="#17263C" font-family="Arial, sans-serif" font-size="16" font-weight="700">The masks below show which keys each of these four query tokens may read.</text>
+</svg>
