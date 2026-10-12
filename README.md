@@ -4,6 +4,8 @@ These are the notes I used to prepare for interviews for a **Computer Vision / D
 
 This is a personal interview prep guide, not a complete ML textbook. Most of the notes are prompts for explaining a topic aloud: what to cover, which details are easy to forget, and how to keep the explanation coherent.
 
+I later added a separate set of notes on LLM inference optimization for AI engineer interviews. They are listed after the original interview rounds.
+
 ## Interview rounds and notes
 
 | Round | What to expect | Notes in this repository |
@@ -38,6 +40,17 @@ Neural networks have their own section because they were less likely to come up 
 
 I prepared the RL and RLHF notes with AI assistance and reviewed and organized them for my own study. Their progression from simpler ideas to more advanced algorithms was inspired by S. N. Nikolenko's lectures.
 
+## LLM inference optimization
+
+These notes focus on how a transformer generates tokens and how inference systems reduce latency or serve more requests:
+
+- [**Transformer generation and KV caching**](inference_optimization/kv_cache.ipynb) explains prefill, decode, full-prefix recomputation, KV cache strategies, and measured generation time.
+- [**Attention backends**](inference_optimization/attention_backend.ipynb) compares the optimization ideas behind attention implementations and includes a timing notebook.
+- [**Continuous batching**](inference_optimization/continious_batching.md) explains chunked prefill, ragged batching, and dynamic scheduling with token-budget and attention-mask diagrams.
+- [**Assisted generation**](inference_optimization/assisted_generation.md) covers draft-and-verify decoding, acceptance rules, speed tradeoffs, and drafting methods such as Medusa, MTP, and EAGLE.
+
 ## How to use these notes
 
 Pick a topic and try to explain it out loud before opening its file. Use the notes to check the structure of your answer and catch missing points. For the later rounds, read [neural networks](nn.md) before [computer vision](cv.md), and [reinforcement learning](rl.md) before [RLHF](rlhf.md); each pair builds on the earlier material.
+
+For inference optimization, start with [transformer generation and KV caching](inference_optimization/kv_cache.ipynb). Then use the other guides to study attention computation, request scheduling, and assisted decoding.
