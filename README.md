@@ -47,6 +47,7 @@ I prepared the RL and RLHF notes with AI assistance and reviewed and organized t
 These notes focus on how a transformer generates tokens and how inference systems reduce latency or serve more requests:
 
 - [**Transformer generation and KV caching**](inference_optimization/kv_cache.ipynb) explains prefill, decode, full-prefix recomputation, KV cache strategies, and measured generation time.
+- [**PagedAttention**](inference_optimization/paged_attention.md) explains block-based KV storage, logical-to-physical mapping, prefix sharing, and memory tradeoffs.
 - [**Attention backends**](inference_optimization/attention_backend.ipynb) compares the optimization ideas behind attention implementations and includes a timing notebook.
 - [**Continuous batching**](inference_optimization/continious_batching.md) explains chunked prefill, ragged batching, and dynamic scheduling with token-budget and attention-mask diagrams.
 - [**Assisted generation**](inference_optimization/assisted_generation.md) covers draft-and-verify decoding, acceptance rules, speed tradeoffs, and drafting methods such as Medusa, MTP, and EAGLE.
