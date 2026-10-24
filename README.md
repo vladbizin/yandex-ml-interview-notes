@@ -53,6 +53,7 @@ These notes focus on how a transformer generates tokens and how inference system
 - [**Attention backends**](inference_optimization/attention_backend.ipynb) compares the optimization ideas behind attention implementations and includes a timing notebook.
 - [**Continuous batching**](inference_optimization/continious_batching.md) explains chunked prefill, ragged batching, and dynamic scheduling with token-budget and attention-mask diagrams.
 - [**Assisted generation**](inference_optimization/assisted_generation.md) covers draft-and-verify decoding, acceptance rules, speed tradeoffs, and drafting methods such as Medusa, MTP, and EAGLE.
+- [**MoE inference optimization**](inference_optimization/moe_inference.md) explains expert kernels, expert parallelism, token exchange, load balancing, and prefill/decode tradeoffs.
 
 ## How to use these notes
 
