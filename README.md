@@ -39,8 +39,10 @@ I did not know what the final team's interview would cover, so I prepared across
 
 - [**Reinforcement learning**](rl.md) starts with MDPs and Bellman equations, then builds through Monte Carlo and temporal difference methods, policy gradients, actor–critic methods, and modern policy optimization.
 - [**RLHF**](rlhf.md) follows the alignment pipeline from supervised fine-tuning and preference data to reward models, PPO, and DPO.
-
 I prepared the RL and RLHF notes with AI assistance and reviewed and organized them for my own study. Their progression from simpler ideas to more advanced algorithms was inspired by S. N. Nikolenko's lectures.
+
+#### Modern LLM architecture
+- [**GPT-2 → gpt-oss**](modern_llm.md) compares the decoder blocks, position encoding, normalization, attention, and mixture of experts.
 
 #### LLM inference optimization
 
