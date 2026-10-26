@@ -61,6 +61,7 @@ These notes focus on how a transformer generates tokens and how inference system
 
 These notes cover how to train within GPU memory limits and use compute efficiently:
 
+- [**GPU memory during training**](training_optimization/gpu_memory.md) explains weights, gradients, optimizer states, activations, and peak VRAM usage.
 - [**Gradient accumulation**](training_optimization/gradient_accumulation.md) explains microbatches, effective batch size, loss scaling.
 
 ## How to use these notes
