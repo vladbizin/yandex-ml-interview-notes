@@ -57,6 +57,12 @@ These notes focus on how a transformer generates tokens and how inference system
 - [**Assisted generation**](inference_optimization/assisted_generation.md) covers draft-and-verify decoding, acceptance rules, speed tradeoffs, and drafting methods such as Medusa, MTP, and EAGLE.
 - [**MoE inference optimization**](inference_optimization/moe_inference.md) explains expert kernels, expert parallelism, token exchange, load balancing, and prefill/decode tradeoffs.
 
+## Training optimization
+
+These notes cover how to train within GPU memory limits and use compute efficiently:
+
+- [**Gradient accumulation**](training_optimization/gradient_accumulation.md) explains microbatches, effective batch size, loss scaling.
+
 ## How to use these notes
 
 Pick a topic and try to explain it out loud before opening its file. Use the notes to check the structure of your answer and catch missing points. For the later rounds, read [neural networks](nn.md) before [computer vision](cv.md), and [reinforcement learning](rl.md) before [RLHF](rlhf.md); each pair builds on the earlier material.
