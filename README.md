@@ -63,6 +63,7 @@ These notes cover how to train within GPU memory limits and use compute efficien
 
 - [**GPU memory during training**](training_optimization/gpu_memory.md) explains weights, gradients, optimizer states, activations, and peak VRAM usage.
 - [**Gradient accumulation**](training_optimization/gradient_accumulation.md) explains microbatches, effective batch size, loss scaling.
+- [**Gradient checkpointing**](training_optimization/gradient_checkpointing.md) explains activation recomputation, memory and compute tradeoffs.
 
 ## How to use these notes
 
